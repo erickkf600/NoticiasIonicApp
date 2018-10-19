@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+    <ion-title>NOTICIAS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-item *ngFor="let n of noticias"> 
+      <h2>{{n.titulo}}</h2>
+      <p>November 5, 1955</p>
+    </ion-item>
+  
+    <img src="../assets/imgs/{{n.imagem}}">
+  
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
